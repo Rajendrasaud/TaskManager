@@ -1,25 +1,46 @@
 package com.raziv.taskmanager;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
-    private ImageView imageview;
-    private EditText etusername, etpassword;
-    private Button btnsave;
-
+    private Button button;
+    private EditText editText,editText2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        imageview = findViewById(R.id.imageview);
-        etusername = findViewById(R.id.etusername);
-        etpassword = findViewById(R.id.etpassword);
-        btnsave = findViewById(R.id.btnsave);
+        button= findViewById(R.id.bottom);
+        editText= findViewById(R.id.editText);
+        editText2=findViewById(R.id.editText2);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+    }
+
+    public void RetrofitCaller(){
+
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
